@@ -23,8 +23,10 @@ class HorTahatBot(telepot.Bot):
                 self.handle_nice(chat_id)
             if re.search(r"\b[Dd][Aa][Nn]\b", msg["text"]) or ur"\u05d3\u05df" in msg["text"]:
                 self.sendMessage(chat_id, u"\u05d3\u05df \u05d2\u05d9\u05d9")
-            if "/doge" in msg["text"]:
-                self.sendMessage(chat_id, "Fuck you dog.")
+            if "i see" in msg["text"]:
+                self.sendMessage(chat_id, "Stop it -.-")
+            if "I see" in msg["text"]:
+                self.sendMessage(chat_id, "Fucking Nggy.")
         except KeyError, e:
             print("Recieved KeyError: %s" % e)
         # sticker behavior
